@@ -124,7 +124,7 @@ export default function EnvelopeIntro({ onOpen }: { onOpen: () => void }) {
                 <p className="font-display text-xs uppercase tracking-[0.3em] text-gold">
                   You are invited
                 </p>
-                <p className="mt-3 font-script text-4xl text-gradient-gold">Arjun & Meenakshi</p>
+                <p className="mt-3 font-script text-4xl text-gradient-gold">Badusha & Aishu</p>
                 <p className="mt-2 text-xs text-muted-foreground">A Kerala Wedding Celebration</p>
               </motion.div>
 

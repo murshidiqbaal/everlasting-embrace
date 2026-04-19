@@ -27,17 +27,17 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Arjun & Meenakshi — A Kerala Wedding" },
+      { title: "Badusha & Aishu — A Kerala Wedding" },
       {
         name: "description",
         content:
-          "Together with their families, Arjun & Meenakshi invite you to celebrate their Kerala Malabar wedding.",
+          "Together with their families, Badusha & Aishu invite you to celebrate their Kerala wedding in Thodupuzha.",
       },
-      { property: "og:title", content: "Arjun & Meenakshi — A Kerala Wedding" },
+      { property: "og:title", content: "Badusha & Aishu — A Kerala Wedding" },
       {
         property: "og:description",
         content:
-          "Together with their families, Arjun & Meenakshi invite you to celebrate their Kerala Malabar wedding.",
+          "Together with their families, Badusha & Aishu invite you to celebrate their Kerala wedding in Thodupuzha.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -7,9 +7,9 @@ import MusicToggle from "@/components/wedding/MusicToggle";
 export const Route = createFileRoute("/story")({
   head: () => ({
     meta: [
-      { title: "Our Story — Arjun & Meenakshi" },
-      { name: "description", content: "How Arjun & Meenakshi met, fell in love, and chose forever." },
-      { property: "og:title", content: "Our Story — Arjun & Meenakshi" },
+      { title: "Our Story — Badusha & Aishu" },
+      { name: "description", content: "How Badusha & Aishu met, fell in love, and chose forever." },
+      { property: "og:title", content: "Our Story — Badusha & Aishu" },
       { property: "og:description", content: "Our journey from a chance meeting to forever." },
     ],
   }),

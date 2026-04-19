@@ -1,11 +1,10 @@
 // Easily editable placeholder content for the wedding site.
 
-const today = new Date();
-const weddingDate = new Date(today.getFullYear(), today.getMonth() + 6, 18, 18, 30, 0);
+const weddingDate = new Date(2026, 4, 10, 18, 30, 0);
 
 export const wedding = {
-  bride: "Meenakshi",
-  groom: "Arjun",
+  bride: "Aishu Jaffer",
+  groom: "Badusha Ameer",
   coupleAnd: "&",
   tagline: "Together with their families, invite you to celebrate the wedding of",
   date: weddingDate,
@@ -15,14 +14,14 @@ export const wedding = {
     month: "long",
     year: "numeric",
   }),
-  timeLabel: "6:30 PM Muhurtham",
+  timeLabel: "6:30 PM Reception",
   venue: {
-    name: "Guruvayur Sree Krishna Temple Hall",
-    city: "Thrissur, Kerala",
+    name: "Madaparambil Resort Auditorium",
+    city: "Thodupuzha, Kerala",
     mapsEmbed:
-      "https://www.google.com/maps?q=Guruvayur+Sree+Krishna+Temple,+Thrissur,+Kerala&output=embed",
+      "https://www.google.com/maps?q=Madaparambil+Resort,+Thodupuzha,+Kerala&output=embed",
     mapsLink:
-      "https://www.google.com/maps/search/?api=1&query=Guruvayur+Sree+Krishna+Temple+Thrissur+Kerala",
+      "https://www.google.com/maps/search/?api=1&query=Madaparambil+Resort+Thodupuzha+Kerala",
   },
   story: [
     {
