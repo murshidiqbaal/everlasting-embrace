@@ -38,14 +38,14 @@ export const wedding = {
       text: "A walk along Thodupuzha Walkway, salted breeze and laughter that refused to end.",
     },
     {
-      year: "2023",
+      year: "2021",
       title: "The Proposal",
       text: "On a quiet evening in Thodupuzha, lit by lanterns and the moon over the backwaters.",
     },
     {
       year: "2024",
       title: "Forever Begins",
-      text: "Hand in hand, blessed by family, by the lamp of the nilavilakku.",
+      text: "Hand in hand, blessed by family.",
     },
   ],
   events: [
