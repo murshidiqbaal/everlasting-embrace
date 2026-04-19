@@ -87,7 +87,7 @@ export default function Hero() {
           ~ A Kerala Malabar Wedding ~
         </motion.p>
 
-        <h1 className="mt-8 font-script text-7xl leading-none text-gradient-gold sm:text-8xl md:text-[8rem]">
+        <h1 className="mt-8 font-script text-5xl whitespace-nowrap leading-none text-gradient-gold sm:text-8xl md:text-[8rem]">
           <ScriptName text={wedding.groom} />
         </h1>
         <motion.div
@@ -98,7 +98,7 @@ export default function Hero() {
         >
           &
         </motion.div>
-        <h1 className="font-script text-7xl leading-none text-gradient-gold sm:text-8xl md:text-[8rem]">
+        <h1 className="font-script text-5xl whitespace-nowrap leading-none text-gradient-gold sm:text-8xl md:text-[8rem]">
           <ScriptName text={wedding.bride} delay={1.8} />
         </h1>
 

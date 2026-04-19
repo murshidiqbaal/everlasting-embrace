@@ -1,9 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
-import NavBar from "@/components/wedding/NavBar";
 import EventDetails from "@/components/wedding/EventDetails";
-import VenueMap from "@/components/wedding/VenueMap";
 import Footer from "@/components/wedding/Footer";
 import MusicToggle from "@/components/wedding/MusicToggle";
+import NavBar from "@/components/wedding/NavBar";
+import VenueMap from "@/components/wedding/VenueMap";
+import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -11,7 +11,7 @@ export const Route = createFileRoute("/events")({
       { title: "Wedding Events — Badusha & Aishu" },
       { name: "description", content: "Mehendi, Nikkah, and Reception details." },
       { property: "og:title", content: "Wedding Events — Badusha & Aishu" },
-      { property: "og:description", content: "All four days of our Kerala wedding celebration." },
+      { property: "og:description", content: "All Five days of our Kerala wedding celebration." },
     ],
   }),
   component: EventsPage,

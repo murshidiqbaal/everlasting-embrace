@@ -21,7 +21,7 @@ Home page contains all sections inline so a single scroll tells the full story; 
 ### Sections (built as reusable components)
 1. **Envelope Intro Overlay** — full-screen ivory + gold envelope; user taps to "Open Invitation". Wax seal breaks, flap opens, golden particles burst, card slides up. Plays a soft chime + paper rustle (Web Audio, no external file). Dismissable, remembered for session.
 2. **Hero** — Three.js canvas with floating 3D jasmine petals + gold particles drifting. Couple names in script with fade + scale + letter-stagger. Tagline below. Date/venue reveal in staggered cards. Animated scroll indicator (bouncing gold dot + line).
-3. **Couple Story Timeline** — vertical timeline with gold lamp icons; each milestone (How we met → First date → Proposal → Wedding) reveals on scroll with opacity + translateY + slight rotate.
+3. **Couple Story Timeline** — vertical timeline with gold lamp icons; each milestone (met → First date → Proposal → Wedding) reveals on scroll with opacity + translateY + slight rotate.
 4. **Event Details** — 4 glassmorphic cards (Mehendi, Sangeet, Wedding Muhurtham, Reception) with date/time/venue, hover tilt + gold glow shimmer.
 5. **Gallery** — masonry grid with hover zoom + maroon overlay; click opens custom lightbox with crossfade + swipe.
 6. **Invitation Message** — emotional Malayalam-inspired blessing with typewriter animation, framed by aripoo SVG dividers.

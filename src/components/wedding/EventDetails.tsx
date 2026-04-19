@@ -1,8 +1,8 @@
 "use client";
 
+import { wedding } from "@/lib/wedding-data";
 import { motion } from "framer-motion";
 import Section from "./Section";
-import { wedding } from "@/lib/wedding-data";
 
 export default function EventDetails() {
   return (
@@ -10,7 +10,7 @@ export default function EventDetails() {
       id="events"
       eyebrow="Save the Dates"
       title="Wedding Events"
-      subtitle="Four days of celebration, blessings, and joy."
+      subtitle="Five days of celebration, blessings, and joy."
     >
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {wedding.events.map((ev, i) => (

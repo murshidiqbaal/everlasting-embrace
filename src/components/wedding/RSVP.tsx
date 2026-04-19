@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 import Section from "./Section";
 
 export default function RSVP() {
@@ -54,7 +54,7 @@ export default function RSVP() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full rounded-xl border border-gold/40 bg-ivory/60 px-4 py-3 font-display text-maroon-deep outline-none focus:border-gold focus:ring-2 focus:ring-gold/40"
-                  placeholder="Aishwarya Nair"
+                  placeholder="Your Name"
                 />
               </div>
 
@@ -68,11 +68,10 @@ export default function RSVP() {
                       key={opt}
                       type="button"
                       onClick={() => setForm({ ...form, attending: opt })}
-                      className={`flex-1 rounded-xl border px-4 py-3 font-display capitalize transition-all ${
-                        form.attending === opt
-                          ? "gradient-royal border-transparent text-ivory shadow-royal"
-                          : "border-gold/40 bg-ivory/60 text-maroon-deep hover:border-gold"
-                      }`}
+                      className={`flex-1 rounded-xl border px-4 py-3 font-display capitalize transition-all ${form.attending === opt
+                        ? "gradient-royal border-transparent text-ivory shadow-royal"
+                        : "border-gold/40 bg-ivory/60 text-maroon-deep hover:border-gold"
+                        }`}
                     >
                       {opt === "yes" ? "Joyfully accept" : "Regretfully decline"}
                     </button>
@@ -137,7 +136,7 @@ export default function RSVP() {
               >
                 🪔
               </motion.div>
-              <h3 className="font-script text-5xl text-gradient-gold">Thank You</h3>
+              <h3 className="font-script text-4xl text-gradient-gold">Thank You</h3>
               <p className="mt-4 font-display text-lg italic text-maroon-deep">
                 {form.name && `Dear ${form.name}, `}
                 {form.attending === "yes"
