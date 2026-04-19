@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+@import "tailwindcss";
 @source "../src";
 @import "tw-animate-css";
 
@@ -118,9 +118,11 @@
   * {
     border-color: var(--color-border);
   }
+
   html {
     scroll-behavior: smooth;
   }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -130,10 +132,15 @@
       radial-gradient(circle at 90% 80%, color-mix(in oklab, var(--maroon) 8%, transparent) 0, transparent 45%);
     background-attachment: fixed;
   }
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     letter-spacing: 0.01em;
   }
+
   ::selection {
     background: color-mix(in oklab, var(--gold) 60%, transparent);
     color: var(--maroon-deep);
@@ -141,24 +148,70 @@
 }
 
 @layer utilities {
-  .font-script { font-family: var(--font-script); font-style: italic; }
-  .font-display { font-family: var(--font-display); }
-  .font-body { font-family: var(--font-body); }
+  .font-script {
+    font-family: var(--font-script);
+    font-style: italic;
+  }
 
-  .text-gold { color: var(--gold); }
-  .text-maroon { color: var(--maroon); }
-  .text-maroon-deep { color: var(--maroon-deep); }
-  .bg-gold { background-color: var(--gold); }
-  .bg-maroon { background-color: var(--maroon); }
-  .bg-ivory { background-color: var(--ivory); }
-  .bg-blush { background-color: var(--blush); }
-  .border-gold { border-color: var(--gold); }
+  .font-display {
+    font-family: var(--font-display);
+  }
 
-  .gradient-gold { background-image: var(--gradient-gold); }
-  .gradient-royal { background-image: var(--gradient-royal); }
-  .shadow-gold { box-shadow: var(--shadow-gold); }
-  .shadow-royal { box-shadow: var(--shadow-royal); }
-  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-gold {
+    color: var(--gold);
+  }
+
+  .text-maroon {
+    color: var(--maroon);
+  }
+
+  .text-maroon-deep {
+    color: var(--maroon-deep);
+  }
+
+  .bg-gold {
+    background-color: var(--gold);
+  }
+
+  .bg-maroon {
+    background-color: var(--maroon);
+  }
+
+  .bg-ivory {
+    background-color: var(--ivory);
+  }
+
+  .bg-blush {
+    background-color: var(--blush);
+  }
+
+  .border-gold {
+    border-color: var(--gold);
+  }
+
+  .gradient-gold {
+    background-image: var(--gradient-gold);
+  }
+
+  .gradient-royal {
+    background-image: var(--gradient-royal);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-royal {
+    box-shadow: var(--shadow-royal);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
 
   .glass {
     background: color-mix(in oklab, var(--ivory) 70%, transparent);
@@ -169,6 +222,7 @@
       0 10px 40px -15px color-mix(in oklab, var(--maroon-deep) 30%, transparent),
       inset 0 1px 0 0 color-mix(in oklab, white 50%, transparent);
   }
+
   .glass-dark {
     background: color-mix(in oklab, var(--maroon-deep) 55%, transparent);
     backdrop-filter: blur(14px) saturate(140%);
@@ -197,21 +251,23 @@
     overflow: hidden;
     isolation: isolate;
   }
+
   .btn-shimmer::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      120deg,
-      transparent 30%,
-      color-mix(in oklab, white 60%, transparent) 50%,
-      transparent 70%
-    );
+    background: linear-gradient(120deg,
+        transparent 30%,
+        color-mix(in oklab, white 60%, transparent) 50%,
+        transparent 70%);
     transform: translateX(-100%);
     transition: transform 0.9s ease;
     pointer-events: none;
   }
-  .btn-shimmer:hover::after { transform: translateX(100%); }
+
+  .btn-shimmer:hover::after {
+    transform: translateX(100%);
+  }
 
   .floral-divider {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20'><path d='M0 10 H80 M120 10 H200' stroke='%23C9A24B' stroke-width='1'/><circle cx='100' cy='10' r='4' fill='none' stroke='%23C9A24B'/><circle cx='100' cy='10' r='8' fill='none' stroke='%23C9A24B' stroke-opacity='0.5'/><circle cx='90' cy='10' r='2' fill='%23C9A24B'/><circle cx='110' cy='10' r='2' fill='%23C9A24B'/></svg>");
@@ -224,18 +280,45 @@
 }
 
 @keyframes shimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes float-slow {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(8deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(8deg);
+  }
 }
-.animate-float-slow { animation: float-slow 7s ease-in-out infinite; }
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
 
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px -5px color-mix(in oklab, var(--gold) 60%, transparent); }
-  50% { box-shadow: 0 0 40px 0 color-mix(in oklab, var(--gold) 80%, transparent); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px -5px color-mix(in oklab, var(--gold) 60%, transparent);
+  }
+
+  50% {
+    box-shadow: 0 0 40px 0 color-mix(in oklab, var(--gold) 80%, transparent);
+  }
 }
-.animate-glow { animation: glow-pulse 3s ease-in-out infinite; }
+
+.animate-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
