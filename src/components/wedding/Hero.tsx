@@ -6,13 +6,15 @@ import { wedding } from "@/lib/wedding-data";
 
 const PetalScene = lazy(() => import("./PetalScene"));
 
-const letter = {
+import type { Variants } from "framer-motion";
+
+const letter: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.9 },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { delay: 0.2 + i * 0.06, duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+    transition: { delay: 0.2 + i * 0.06, duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
