@@ -7,9 +7,9 @@ import MusicToggle from "@/components/wedding/MusicToggle";
 export const Route = createFileRoute("/rsvp")({
   head: () => ({
     meta: [
-      { title: "RSVP — Arjun & Meenakshi" },
+      { title: "RSVP — Badusha & Aishu" },
       { name: "description", content: "Let us know if you can join our Kerala wedding celebration." },
-      { property: "og:title", content: "RSVP — Arjun & Meenakshi" },
+      { property: "og:title", content: "RSVP — Badusha & Aishu" },
       { property: "og:description", content: "Reply to our wedding invitation." },
     ],
   }),

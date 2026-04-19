@@ -15,13 +15,13 @@ import MusicToggle from "@/components/wedding/MusicToggle";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Arjun & Meenakshi — A Kerala Wedding Invitation" },
+      { title: "Badusha & Aishu — A Kerala Wedding Invitation" },
       {
         name: "description",
         content:
-          "Join Arjun & Meenakshi for a Kerala Malabar wedding celebration. RSVP, view event details, and explore our story.",
+          "Join Badusha & Aishu for a Kerala wedding celebration in Thodupuzha. RSVP, view event details, and explore our story.",
       },
-      { property: "og:title", content: "Arjun & Meenakshi — A Kerala Wedding Invitation" },
+      { property: "og:title", content: "Badusha & Aishu — A Kerala Wedding Invitation" },
       {
         property: "og:description",
         content: "A Kerala Malabar wedding celebration. You are invited.",
