@@ -50,8 +50,8 @@ export const wedding = {
   ],
   events: [
     {
-      name: "Nikhah",
-      date: new Date(weddingDate.getTime() - 2 * 86400000),
+      name: "Nikkah",
+      date: new Date(weddingDate.getTime() - 9 * 86400000),
       time: "11:00 AM",
       place: "Masjid-Noor Juma Masjid, Elamdesam",
       icon: "🌿",
@@ -80,7 +80,8 @@ export const wedding = {
 
     {
       name: "Reception",
-      date: new Date(weddingDate.getTime() - 86400000),
+      //may 10th
+      date: weddingDate,
       time: "6:00 PM",
       place: "Madaparambil Resort, Thodupuzha",
       icon: "💍",
