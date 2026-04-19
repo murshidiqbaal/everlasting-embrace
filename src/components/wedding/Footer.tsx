@@ -86,14 +86,17 @@ export default function Footer() {
           <motion.span animate={{ y: [0, -6, 0] }} transition={{ duration: 3, repeat: Infinity }}>
             🪔
           </motion.span>
-          <p className="font-script text-3xl text-gold">{wedding.groom} & {wedding.bride}</p>
-          <motion.span animate={{ y: [0, -6, 0] }} transition={{ duration: 3, repeat: Infinity, delay: 0.6 }}>
+          <p className="font-script text-3xl text-gold">
+            {wedding.groom} & {wedding.bride}
+          </p>
+          <motion.span
+            animate={{ y: [0, -6, 0] }}
+            transition={{ duration: 3, repeat: Infinity, delay: 0.6 }}
+          >
             🪔
           </motion.span>
         </div>
-        <p className="mt-3 text-xs italic text-ivory/70">
-          Made with love · {wedding.dateLabel}
-        </p>
+        <p className="mt-3 text-xs italic text-ivory/70">Made with love · {wedding.dateLabel}</p>
       </div>
     </footer>
   );

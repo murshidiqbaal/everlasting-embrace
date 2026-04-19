@@ -30,14 +30,10 @@ export default function Section({
             className="mb-12 text-center"
           >
             {eyebrow && (
-              <p className="font-display text-xs uppercase tracking-[0.4em] text-gold">
-                {eyebrow}
-              </p>
+              <p className="font-display text-xs uppercase tracking-[0.4em] text-gold">{eyebrow}</p>
             )}
             {title && (
-              <h2 className="mt-3 font-script text-4xl text-gradient-gold sm:text-6xl">
-                {title}
-              </h2>
+              <h2 className="mt-3 font-script text-4xl text-gradient-gold sm:text-6xl">{title}</h2>
             )}
             <div className="floral-divider mx-auto mt-4 max-w-xs" />
             {subtitle && (

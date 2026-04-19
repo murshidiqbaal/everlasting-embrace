@@ -68,10 +68,11 @@ export default function RSVP() {
                       key={opt}
                       type="button"
                       onClick={() => setForm({ ...form, attending: opt })}
-                      className={`flex-1 rounded-xl border px-4 py-3 font-display capitalize transition-all ${form.attending === opt
-                        ? "gradient-royal border-transparent text-ivory shadow-royal"
-                        : "border-gold/40 bg-ivory/60 text-maroon-deep hover:border-gold"
-                        }`}
+                      className={`flex-1 rounded-xl border px-4 py-3 font-display capitalize transition-all ${
+                        form.attending === opt
+                          ? "gradient-royal border-transparent text-ivory shadow-royal"
+                          : "border-gold/40 bg-ivory/60 text-maroon-deep hover:border-gold"
+                      }`}
                     >
                       {opt === "yes" ? "Joyfully accept" : "Regretfully decline"}
                     </button>

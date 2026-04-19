@@ -22,8 +22,7 @@ export const wedding = {
   venue: {
     name: "Madaparambil Resort",
     city: "Thodupuzha, Kerala",
-    mapsEmbed:
-      "https://www.google.com/maps?q=Madaparambil+Resort,+Thodupuzha,+Kerala&output=embed",
+    mapsEmbed: "https://www.google.com/maps?q=Madaparambil+Resort,+Thodupuzha,+Kerala&output=embed",
     mapsLink:
       "https://www.google.com/maps/search/?api=1&query=Madaparambil+Resort+Thodupuzha+Kerala",
   },

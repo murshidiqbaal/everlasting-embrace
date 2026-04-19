@@ -10,9 +10,7 @@ export default function Gallery() {
 
   const next = () => setActive((a) => (a === null ? 0 : (a + 1) % wedding.gallery.length));
   const prev = () =>
-    setActive((a) =>
-      a === null ? 0 : (a - 1 + wedding.gallery.length) % wedding.gallery.length,
-    );
+    setActive((a) => (a === null ? 0 : (a - 1 + wedding.gallery.length) % wedding.gallery.length));
 
   return (
     <Section

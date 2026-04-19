@@ -128,8 +128,16 @@
     color: var(--color-foreground);
     font-family: var(--font-body);
     background-image:
-      radial-gradient(circle at 10% 20%, color-mix(in oklab, var(--gold) 10%, transparent) 0, transparent 40%),
-      radial-gradient(circle at 90% 80%, color-mix(in oklab, var(--maroon) 8%, transparent) 0, transparent 45%);
+      radial-gradient(
+        circle at 10% 20%,
+        color-mix(in oklab, var(--gold) 10%, transparent) 0,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 90% 80%,
+        color-mix(in oklab, var(--maroon) 8%, transparent) 0,
+        transparent 45%
+      );
     background-attachment: fixed;
   }
 
@@ -238,7 +246,12 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(135deg, oklch(0.78 0.14 85), oklch(0.6 0.14 60), oklch(0.78 0.14 85));
+    background: linear-gradient(
+      135deg,
+      oklch(0.78 0.14 85),
+      oklch(0.6 0.14 60),
+      oklch(0.78 0.14 85)
+    );
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -256,10 +269,12 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg,
-        transparent 30%,
-        color-mix(in oklab, white 60%, transparent) 50%,
-        transparent 70%);
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      color-mix(in oklab, white 60%, transparent) 50%,
+      transparent 70%
+    );
     transform: translateX(-100%);
     transition: transform 0.9s ease;
     pointer-events: none;
@@ -280,7 +295,6 @@
 }
 
 @keyframes shimmer {
-
   0%,
   100% {
     background-position: 0% 50%;
@@ -292,7 +306,6 @@
 }
 
 @keyframes float-slow {
-
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
@@ -308,7 +321,6 @@
 }
 
 @keyframes glow-pulse {
-
   0%,
   100% {
     box-shadow: 0 0 20px -5px color-mix(in oklab, var(--gold) 60%, transparent);

@@ -42,11 +42,31 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Badusha & Aishu — A Kerala Wedding" },
-      { name: "description", content: "A modern, elegant wedding invitation website with animated sections and RSVP functionality." },
-      { property: "og:description", content: "A modern, elegant wedding invitation website with animated sections and RSVP functionality." },
-      { name: "twitter:description", content: "A modern, elegant wedding invitation website with animated sections and RSVP functionality." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f5879d20-c77d-4e4f-8f15-a00c532b7de3/id-preview-2e3537ff--91877a0f-ee48-4537-b985-97df2fe6d4ad.lovable.app-1776583648553.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f5879d20-c77d-4e4f-8f15-a00c532b7de3/id-preview-2e3537ff--91877a0f-ee48-4537-b985-97df2fe6d4ad.lovable.app-1776583648553.png" },
+      {
+        name: "description",
+        content:
+          "A modern, elegant wedding invitation website with animated sections and RSVP functionality.",
+      },
+      {
+        property: "og:description",
+        content:
+          "A modern, elegant wedding invitation website with animated sections and RSVP functionality.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "A modern, elegant wedding invitation website with animated sections and RSVP functionality.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f5879d20-c77d-4e4f-8f15-a00c532b7de3/id-preview-2e3537ff--91877a0f-ee48-4537-b985-97df2fe6d4ad.lovable.app-1776583648553.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f5879d20-c77d-4e4f-8f15-a00c532b7de3/id-preview-2e3537ff--91877a0f-ee48-4537-b985-97df2fe6d4ad.lovable.app-1776583648553.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

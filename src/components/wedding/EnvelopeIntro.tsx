@@ -1,7 +1,7 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 // Soft chime + paper rustle via Web Audio API — no asset files.
 function playOpenSound() {
@@ -101,8 +101,7 @@ export default function EnvelopeIntro({ onOpen }: { onOpen: () => void }) {
               <div
                 className="absolute inset-0 rounded-md shadow-royal"
                 style={{
-                  background:
-                    "linear-gradient(135deg, oklch(0.97 0.018 85), oklch(0.92 0.03 85))",
+                  background: "linear-gradient(135deg, oklch(0.97 0.018 85), oklch(0.92 0.03 85))",
                   border: "1px solid oklch(0.74 0.13 80 / 0.6)",
                 }}
               />
@@ -110,15 +109,10 @@ export default function EnvelopeIntro({ onOpen }: { onOpen: () => void }) {
               <motion.div
                 className="absolute left-4 right-4 top-4 rounded-md p-6 text-center"
                 style={{
-                  background:
-                    "linear-gradient(180deg, oklch(0.99 0.01 85), oklch(0.96 0.02 85))",
+                  background: "linear-gradient(180deg, oklch(0.99 0.01 85), oklch(0.96 0.02 85))",
                   border: "1px solid oklch(0.74 0.13 80 / 0.5)",
                 }}
-                animate={
-                  opening
-                    ? { y: -110, opacity: 1 }
-                    : { y: 0, opacity: 0.95 }
-                }
+                animate={opening ? { y: -110, opacity: 1 } : { y: 0, opacity: 0.95 }}
                 transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
               >
                 <p className="font-display text-xs uppercase tracking-[0.3em] text-gold">
@@ -134,8 +128,7 @@ export default function EnvelopeIntro({ onOpen }: { onOpen: () => void }) {
                 style={{
                   height: "55%",
                   clipPath: "polygon(0 0, 100% 0, 50% 100%)",
-                  background:
-                    "linear-gradient(135deg, oklch(0.78 0.13 80), oklch(0.62 0.13 70))",
+                  background: "linear-gradient(135deg, oklch(0.78 0.13 80), oklch(0.62 0.13 70))",
                   transformStyle: "preserve-3d",
                   zIndex: 5,
                 }}
@@ -166,7 +159,7 @@ export default function EnvelopeIntro({ onOpen }: { onOpen: () => void }) {
                           "0 0 0 3px oklch(0.74 0.13 80), 0 10px 30px -5px oklch(0.22 0.1 22 / 0.7)",
                       }}
                     >
-                      A&M
+                      B&A
                     </div>
                   </motion.button>
                 )}

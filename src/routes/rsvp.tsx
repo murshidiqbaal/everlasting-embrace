@@ -8,7 +8,10 @@ export const Route = createFileRoute("/rsvp")({
   head: () => ({
     meta: [
       { title: "RSVP — Badusha & Aishu" },
-      { name: "description", content: "Let us know if you can join our Kerala wedding celebration." },
+      {
+        name: "description",
+        content: "Let us know if you can join our Kerala wedding celebration.",
+      },
       { property: "og:title", content: "RSVP — Badusha & Aishu" },
       { property: "og:description", content: "Reply to our wedding invitation." },
     ],
